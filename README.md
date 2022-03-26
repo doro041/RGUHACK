@@ -1,2 +1,2 @@
-# RGUHACK
-CGI challenge
+# HACKATHON
+ 
