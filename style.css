@@ -13,9 +13,7 @@
     width: 350px;
     
 }
-.header-image #title a {
-    background: url( ' /home/dolora/Downloads/GreenBean.png' ) no-repeat;
-} 
+
 .header-image #description {
     display: block;
     overflow: hidden;
@@ -80,3 +78,18 @@
     border: none;
     cursor: pointer;
 } 
+
+/*login.html*/
+
+.form-signin {
+    margin-top: 100px;
+    margin-right: 600px;
+    margin-left: 600px;
+   
+}
+
+.checkbox {
+    display: flex;
+    justify-content: center;
+}
+
