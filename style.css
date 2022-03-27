@@ -117,3 +117,8 @@
 .container {
     margin-top: 5rem;
 }
+
+.carousel-item{
+    padding: 10% 15%;
+}
+
