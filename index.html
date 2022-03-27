@@ -1,55 +1,71 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset = "utf-8" />
-          
-        <title>
-          GreenBean
-        </title>
-          
-        <!-- add icon link -->
-        <link rel = "icon" href = 
-        /home/dolora/Downloads/GreenBean.png
-        type = "image/x-icon">
-        
-            
-       
-        
-          
-    </head>
-        
-        </head>
-    <body>
-        <link rel="stylesheet" type="text/css" href="style.css">
-       
-        
-        <div class="header">
-            <link rel href=/home/dolora/Downloads/GreenBean.png>
-            <h1><i>GreenBean</i></h1>
-            <p>For a more sustainable future</p>
-           
-          </div>   
-        <div class="topnav" id="myTopnav">
-            <a href="index.html" class="active">Home</a>
-            <a href="login.html">Login</a>
-            <a href="profile.html">Profile</a>
-            <a href="items.html">Products</a>
-            
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-            </a>
-            <div class="search">
-                <form action="#">
-                    <input type="text"
-                        placeholder=" Search Products"
-                        name="search">
-                    <button>
-                        <i class="fa fa-search"
-                            style="font-size: 18px;">
-                        </i>
+<html lang="en">
+<head>
+    <title>Shopping List</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Shopping List</h1>
+
+        <form id="js-shopping-list-form">
+            <label for="shopping-list-entry">Add an item</label>
+            <input type="text" name="shopping-list-entry" id="shopping-list-entry" placeholder="e.g., broccoli">
+            <button type="submit">Add item</button>
+        </form>
+
+        <ul class="shopping-list">
+            <li>
+                <span class="shopping-item">apples</span>
+                <div class="shopping-item-controls">
+                    <button class="shopping-item-toggle">
+                        <span class="button-label">check</span>
                     </button>
-                </form>
-            </div>
-          </div>
-    </body>
-</html>                    
+                    <button class="shopping-item-delete">
+                        <span class="button-label">delete</span>
+                    </button>
+                </div>
+            </li>
+            <li>
+                <span class="shopping-item">oranges</span>
+                <div class="shopping-item-controls">
+                    <button class="shopping-item-toggle">
+                        <span class="button-label">check</span>
+                    </button>
+                    <button class="shopping-item-delete">
+                        <span class="button-label">delete</span>
+                    </button>
+                </div>
+            </li>
+            <li>
+                <span class="shopping-item shopping-item__checked">milk</span>
+                <div class="shopping-item-controls">
+                    <button class="shopping-item-toggle">
+                        <span class="button-label">check</span>
+                    </button>
+                    <button class="shopping-item-delete">
+                        <span class="button-label">delete</span>
+                    </button>
+                </div>
+            </li>
+            <li>
+                <span class="shopping-item">bread</span>
+                <div class="shopping-item-controls">
+                    <button class="shopping-item-toggle">
+                        <span class="button-label">check</span>
+                    </button>
+                    <button class="shopping-item-delete">
+                        <span class="button-label">delete</span>
+                    </button>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>

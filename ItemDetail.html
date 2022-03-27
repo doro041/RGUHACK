@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8" />
+          
+        <title>
+          GreenBean item detail
+        </title>
+          
+        <!-- add icon link -->
+        <link rel = "icon" href = 
+        /img/GreenBean.png
+        type = "image/x-icon">
+        
+            
+       
+        
+          
+    </head>
+        <style>
+        	@font-face {
+			  font-family: bg;
+			  src: url("./fonts/BrandonGrotesque-Medium.woff");
+			}
+			
+			@font-face {
+			  font-family: bg-black;
+			  src: url("./fonts/BrandonGrotesque-Black.woff");
+			}
+			
+			body {
+			  font-family: bg;
+			  margin: 0;
+			  overflow: hidden;
+			  font-size: 18px;
+			  background-repeat: repeat;
+			  background-size: cover;
+			}
+			
+			hr {
+			  border: rgb(19, 19, 19) solid 1px;
+			  box-shadow: 1px 1px 3px gray;
+			}
+			
+			p {
+			  font-family: bg;
+			}
+			
+			.content {
+			  padding: 20px;
+			  display: flex;
+			  flex-direction: column;
+			  justify-content: center;
+			  align-items: center;
+			}
+			
+			.main {
+			  display: flex;
+			  align-items: center;
+			  justify-content: center;
+			}
+			
+			.wrapper {
+			  padding: 20px;
+			  border-radius: 10px;
+			  background-color: white;
+			  box-shadow: gray 2px 2px 10px;
+			  width: 50%;
+			  margin-top: 40px;
+			}
+			
+			.form .title {
+			  font-size: 18px;
+			  font-family: bg-black;
+			}
+			
+			.form {
+			  margin-left: 20px;
+			}
+			
+			.form .small-desc {
+			  opacity: 0.8;
+			  font-size: 16px;
+			  margin-top: -20px;
+			}
+			
+			.image .product {
+			  width: 400px;
+			  height: inherit;
+			  /* border: solid gray 1px; */
+			  border-radius: 10px;
+			  box-shadow: rgb(149, 149, 149) 1px 1px 5px;
+			}
+			
+			.form .buy {
+			  width: 100%;
+			  padding: 15px;
+			  background-color: none;
+			  border-radius: 5px;
+			  border: none;
+			  color: black;
+			  transition: .3s;
+			  cursor: pointer;
+			  font-family: bg;
+			  outline: none;
+			}
+			
+			.form .tip {
+			  opacity: 0.9;
+			}
+			
+			.form .buy:hover {
+			  color: white;
+			  background-color: black;
+			  box-shadow: gray 1px 1px 5px;
+			}
+			
+			.form .add-to-card {
+			  margin-top: 10px;
+			  background-color: rgb(0,120,212);
+			  color: white;
+			}
+			
+			.form .add-to-card:hover {
+			  background-color: rgb(1, 133, 235);
+			}
+			
+			.long-desc .title {
+			  opacity: 0.9;
+			}
+			
+			@media screen and (max-width: 425px) {
+			  body {
+			    overflow: auto;
+			  }
+			  .main {
+			    display: block;
+			  }
+			  .image .product {
+			    width: 100%;
+			  }
+			  .form .buy {
+			    font-size: 20px;
+			  }
+			  .long-desc {
+			    padding: 10px 5px;
+			  }
+			  .form {
+			    margin-left: 0;
+			  }
+			}
+        </style>
+    </head>
+    <body>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+       
+        
+         
+        <div class="topnav" id="myTopnav">
+            <a href="">Back</a>
+            <div class="search">
+                <form action="#">
+                    <input type="text"
+                        placeholder=" Search Products"
+                        name="search">
+                    <button>
+                        <i class="fa fa-search"
+                            style="font-size: 18px;">
+                        </i>
+                    </button>
+                </form>
+            </div>
+        </div>
+          
+  	<div class="content">
+      <div class="wrapper">
+        <div class="main">
+          <div class="image">
+            <img src="./img/bag.png" alt="Backpack" class="product" title="Backpack">
+          </div>
+          <div class="form">
+            <h2 class="title">Backpack</h2>
+            <p class="small-desc">Huge & modern & blue Backpack</p>
+            <p class="price">Price: 5$</p>
+            <hr>
+            <button class="buy">BUY</button>
+            <button class="buy add-to-card">ADD TO FAVOURITE</button>
+            <p class="tip">TIP: <span style="color: rgb(255, 23, 23);">Here are some tips given by the seller</span></p>
+          </div>
+        </div>
+        <div class="long-desc">
+          <h1 class="title">Modern Backpack</h1>
+          <p>Large backpacks, used to carry loads over 10 kilograms (22 lb), 
+          	as well as smaller sports backpacks (e.g. running, cycling, hiking and hydration), 
+          	usually offload the largest part (up to about 90%) of their weight onto padded hip belts, 
+          	leaving the shoulder straps mainly for stabilising the load.</p>
+        </div>
+      </div>
+    </div>
+
+    </body>
+</html>                    
