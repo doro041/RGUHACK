@@ -21,13 +21,75 @@
             }
         }
     </script>
+    <style>
+        body {
+            background: #fff;
+        }
+
+        .xst-head {
+            width: 100%;
+            height: 258px;
+        }
+
+        .xst-body {
+            width: 100%;
+            height: 800px;
+            margin-top: 10px;
+            margin-left: -7px;
+        }
+
+        .xst-footf {
+            width: 100%;
+            height: 410px;
+        }
+
+        .div-b {
+            width: 1200px;
+            margin: auto;
+        }
+
+        .test {
+            width: 100%;
+            height: 100%;
+            background: rgba(100,100,100,0.5);
+            display: none;
+            position: fixed;
+            z-index: 2;
+            top: 0;
+            left: 0;
+        }
+
+            .test iframe {
+                width: 470px;
+                height: 530px;
+                overflow: hidden;
+                position: fixed;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                margin: auto;
+                background: #fff;
+            }
+
+        .zhangyanfa {
+            width: 73px;
+            height: 14px;
+            background: red;
+            position: absolute;
+            z-index: 3;
+            top: 370px;
+            left: 166px;
+            opacity: 0;
+        }
+    </style>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
         <a class="navbar-brand" href="home.html" onclick="check_link(this)">
-            Book
-            Mart
+            Green
+            Bean
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,6 +126,29 @@
     </nav>
     <div id="alert-wrapper" class="container mx-2 my-2">
 
+    </div>
+    <div class="container mx-2 my-4">
+        <h1 class="font-weight-bold text-center">
+            Register Yourself
+        </h1>
+        <div class="xst-personalinformation">
+            <form action="##">
+                <p><span>username</span>£º<input type="text"></p>
+                <p><span>email</span>£º<input type="text"></p>
+                <p><span>gender</span>£º<input type="radio" value="Male" name="sex">Male <input type="radio" value="Female" name="sex">Female <input type="radio" value="secrect" name="sex" checked="true" ="">Prefer not to say</p>
+                <p><span>Date of birth</span>£º<select name="xst-year" id=""><option value="2014">2014</option></select>Year<select name="xst-month" id=""><option value="01">01</option></select>Month<select name="xst-day" id=""><option value="01">01</option></select></p>
+                <p><span>Phonenumber</span>£º<input type="text"></p>
+                <p><span>Region</span>£º<select name="area" id=""><option value="">Select...</option></select></p>
+                <p><span>Address</span>£º<input class="address" type="text"></p>
+                <p><span>Postcode</span>£º<input type="text"></p>
+
+                <p><span>Hobbies</span>£º</p><textarea name="hobby" id="" cols="60" rows="5"></textarea>
+                <button type="button" class="btn btn-outline-primary mx-2 my-2" id="regbtn" onclick="showinput(this)">
+                Register
+                </button>
+        <button type="button" class="btn btn-outline-danger mx-2 my-2" id="rstbtn">Reset</button>
+            </form>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
